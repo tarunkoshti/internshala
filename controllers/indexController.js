@@ -20,7 +20,7 @@ exports.homepage = catchAsyncErrors(async function(req, res, next){
 exports.currnetUser = catchAsyncErrors(async function(req, res, next){
 
     const student = await Student.findById(req.id).exec();
-    res.json({student})
+    res.json(student)
 });
 
 exports.studentsignup = catchAsyncErrors(async function(req, res, next){

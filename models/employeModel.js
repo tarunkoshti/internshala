@@ -16,7 +16,7 @@ const employeModel = new mongoose.Schema({
     },
     contact: {
         type: String,
-        required: [true, "Contact is required"],
+        // required: [true, "Contact is required"],
         maxLength: [10, "Contact must not exceed 10 character"],
         minLength: [10, "Contact should be atleast 4 character long"],
     },
@@ -48,7 +48,7 @@ const employeModel = new mongoose.Schema({
     },
     organizationname: {
         type: String,
-        required: [true, "Organization name is required"],
+        // required: [true, "Organization name is required"],
         minLength: [4, "Organization name should be atleast 4 character long"],
     },
     organizationlogo: {

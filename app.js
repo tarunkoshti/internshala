@@ -1,6 +1,18 @@
 require("dotenv").config({path: "./.env"})
 const express = require("express")
 const app = express()
+const cors = require('cors');
+
+// Use CORS middleware
+
+const crosOptions = {
+    origin: "http://localhost:5173/",
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD"],
+    credentials: true,
+}
+
+app.use(cors(crosOptions))
+
 
 // database connectivity
 require("./models/db").connectDatabase();
