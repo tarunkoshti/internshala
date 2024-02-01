@@ -18,6 +18,7 @@ const Jobcard = () => {
   }, [])
 
   return (
+
     <div >
         {
           d.map((internship, index) => (
@@ -27,7 +28,8 @@ const Jobcard = () => {
       </div>
           ))
         }
-    </div>
+        </div>
+
   )
 }
 
