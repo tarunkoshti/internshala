@@ -1,22 +1,7 @@
-import React, { useEffect, useState } from 'react'
 import '../index.css'
 import Jobcard from '../components/Jobcard'
-import axios from 'axios'
 
 const Homepage = () => {
-
-  const [d, setD] = useState([])
-
-  const fetchData = async () => {
-    const response = await axios.get("/api/employe/internship/read/all")
-    const { internships } = response.data
-    setD(internships)
-    console.log(internships)
-  }
-
-  useEffect(() => {
-    fetchData()
-  }, [])
 
   return (
     <div className='h-[100vh]'>
