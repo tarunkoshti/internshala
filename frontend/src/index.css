@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+#behenkalabda::-webkit-scrollbar
+{
+    display: none;
+}
