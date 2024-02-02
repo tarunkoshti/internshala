@@ -86,7 +86,7 @@ const Login = () => {
                         />
                     </div>
 
-                    <Link to="/student/signin"
+                    <Link to="/forget"
                         className='text-blue-700 text-right font-semibold text-sm'
                     >Forget Password?</Link>
 

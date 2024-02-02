@@ -6,6 +6,8 @@ import Nav from './components/Nav'
 import Signup from './pages/Signup'
 import Homepage from './pages/Homepage'
 import Employee from './pages/Employee'
+import Forget from './components/Forget'
+import Forgetlink from './components/forgetlink'
 
 const App = () => {
   return (
@@ -27,10 +29,13 @@ const App = () => {
         <Route path='/employee/signup' element={<Signup />} />
         <Route path='/student/dashboard' element={<Student />} />
         <Route path='/employee/dashboard' element={<Employee />} />
+        <Route path='/forget' element={<Forget/>} />
+        <Route path='/forget-link' element={<Forgetlink/>} />
 
       </Routes>
     </>
   )
+  
 }
 
 export default App
