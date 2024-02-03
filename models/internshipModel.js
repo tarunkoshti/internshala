@@ -30,6 +30,8 @@ const internshipModel = new mongoose.Schema({
     },
     perks: String,
     assements: String,
+    company: String,
+    location: String
 
 },
     { timestamps: true }

@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { homepage, employesignup, employesignin, employesignout, currnetEmploye, employesendmail, employeforgetlink, employeresetpassword, employeupdate, employeavatar, createinternship, readinternship, readsingleinternship, createjob, readjob, readsinglejob, readallinternship
+const { homepage, employesignup, employesignin, employesignout, currnetEmploye, employesendmail, employeforgetlink, employeresetpassword, employeupdate, employeavatar, createinternship, readinternship, readsingleinternship, createjob, readjob, readsinglejob, readallinternship, readalljob
 } = require("../controllers/employeController");
 const { isAuthenticated } = require("../middlewares/auth");
 
@@ -60,6 +60,9 @@ router.post("/job/create", isAuthenticated, createjob)
 
 //POST /job/read/
 router.post("/job/read/", isAuthenticated, readjob)
+
+//POST /job/read/all
+router.get("/job/read/all", readalljob)
 
 //POST /job/read/:id
 router.post("/job/read/:id", isAuthenticated, readsinglejob)
