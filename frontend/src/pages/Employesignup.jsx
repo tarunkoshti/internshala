@@ -3,14 +3,15 @@ import axios from 'axios';
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 
-const Signup = () => {
-
+const Employesignup = () => {
+  
   const navigate = useNavigate()
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [firstname, setFirstname] = useState("")
   const [lastname, setLastname] = useState("")
-
+  const [contact,setContact]=useState("")
+  const [countrycode,setCountrycode]=useState("+91")
 
 
   const ClickHandler = async (e) => {
@@ -25,19 +26,20 @@ const Signup = () => {
       };
       // alert("jcnjd")
 
-      const { data } = await axios.post("/api/user/student/signup",
+      const { data } = await axios.post("/api/employe/signup",
         {
           email,
           password,
           firstname,
-          lastname
+          lastname,
+          contact
         },
         config
       )
 
       console.log(data)
 
-      navigate("/student/signin")
+      navigate("/employee/signin")
     }
     catch (err) {
       console.log(err.message)
@@ -98,7 +100,22 @@ const Signup = () => {
           </div>
           
         </div>
+        <div > 
+          <label htmlFor="p">Mobile Number</label>
+        <div className='flex' > 
 
+          <input  className='w-[70px] px-3 py-1.5 mt-1.5 border-[2px] rounded-md outline-blue-500' type="text" value={countrycode} onChange={(e) => setCountrycode(e.target.value)} />
+          <input
+            className='w-full px-3 py-1.5 mt-1.5 border-[2px] rounded-md outline-blue-500'
+            type="text"
+            placeholder='Must be atleat 10 character'
+            id='p'
+            name='password'
+            value={contact}
+            onChange={(e) => setContact(e.target.value)}
+          />
+        </div>
+        </div>
         <p className='text-xs'>By signing up, you agree to our <Link className='text-blue-700'>Terms and Conditions</Link>.</p>
 
         <button
@@ -112,4 +129,4 @@ const Signup = () => {
   )
 }
 
-export default Signup
+export default Employesignup
