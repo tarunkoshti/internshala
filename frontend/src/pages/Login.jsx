@@ -48,14 +48,14 @@ const Login = () => {
             <h1 className='text-5xl font-bold'>Login to show more</h1>
             <div className='w-full max-w-md flex flex-col gap-4 shadow-lg shadow-blue-100  rounded-xl overflow-hidden py-10 px-5'>
                 <div className='w-full flex'>
-                    <div
+                    <Link to="/student/signin"
                         onClick={() => b(true)}
                         className='text-2xl text-center w-1/2 cursor-pointer py-3 font-semibold'
-                        style={a ? { borderBottom: "3px solid blue", color: "blue" } : { borderBottomColor: "transparent" }}>Student</div>
-                    <div
+                        style={a ? { borderBottom: "3px solid blue", color: "blue" } : { borderBottomColor: "transparent" }}>Student</Link>
+                    <Link to="/employee/signin"
                         onClick={() => b(false)}
                         className='text-2xl text-center w-1/2 cursor-pointer py-3 font-semibold'
-                        style={a ? { backgroundColor: "transparent" } : { borderBottom: "3px solid blue", color: "blue" }}>Employee</div>
+                        style={a ? { backgroundColor: "transparent" } : { borderBottom: "3px solid blue", color: "blue" }}>Employee</Link>
                 </div>
                 <form
                     className='w-full flex flex-col gap-4 pt-5'
@@ -86,7 +86,7 @@ const Login = () => {
                         />
                     </div>
 
-                    <Link to="/student/signin"
+                    <Link to="/forget"
                         className='text-blue-700 text-right font-semibold text-sm'
                     >Forget Password?</Link>
 

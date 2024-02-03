@@ -43,7 +43,7 @@ router.post("/avatar/:id", isAuthenticated, employeavatar)
 router.post("/internship/create", isAuthenticated, createinternship)
 
 //POST /internship/read/
-router.post("/internship/read/", isAuthenticated, readinternship)
+router.get("/internship/read", isAuthenticated, readinternship)
 
 //POST /internship/read/all
 router.get("/internship/read/all", readallinternship)
