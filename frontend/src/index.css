@@ -3,7 +3,15 @@
 @tailwind utilities;
 
 
-#behenkalabda::-webkit-scrollbar
+#scroll::-webkit-scrollbar
+{
+    display: none;
+}
+#job::-webkit-scrollbar
+{
+    display: none;
+}
+#scroller::-webkit-scrollbar
 {
     display: none;
 }
