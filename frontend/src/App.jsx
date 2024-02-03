@@ -10,6 +10,7 @@ import Forget from './components/Forget'
 import Forgetlink from './components/forgetlink'
 import Employesignup from './pages/Employesignup'
 
+
 const App = () => {
   return (
     <>
@@ -32,6 +33,7 @@ const App = () => {
         <Route path='/employee/dashboard' element={<Employee />} />
         <Route path='/forget' element={<Forget/>} />
         <Route path='/forget-link' element={<Forgetlink/>} />
+       
 
       </Routes>
     </>

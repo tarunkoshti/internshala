@@ -2,7 +2,7 @@
 import React from 'react'
 import Internshiocard from '../components/Internshiocard'
 import Jobcard from '../components/Jobcard'
-import Footer from '../components/footer'
+import Footer from '../components/Footer'
 
 const Homepage = () => {
   return (
