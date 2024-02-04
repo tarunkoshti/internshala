@@ -184,6 +184,14 @@ exports.readjob = catchAsyncErrors(async function (req, res, next) {
     })
 });
 
+exports.readalljob = catchAsyncErrors(async function (req, res, next) {
+    const jobs = await Job.find().exec();
+    res.status(200).json({
+        success: true,
+        jobs
+    })
+});
+
 exports.readsinglejob = catchAsyncErrors(async function (req, res, next) {
     const job = await Job.findById(req.params.id).exec();
     res.status(200).json({

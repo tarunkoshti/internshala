@@ -4,7 +4,7 @@ import { CiSearch } from "react-icons/ci";
 // import Logo from '/logo.png'
 
 
-const Nav = ({view}) => {
+const Nav = ({ view }) => {
   return (
     <div className='border-b-2 border-zinc-300'>
       <nav className='flex w-[80%]  m-auto justify-between items-center '>
@@ -21,7 +21,7 @@ const Nav = ({view}) => {
         {/* nav right part */}
         <div className='flex gap-6' id="navright">
           <div className='flex items-center gap-3'>
-            <CiSearch size='25' />
+            <CiSearch size='20' />
             <NavLink >Search</NavLink>
           </div>
 
