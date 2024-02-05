@@ -25,21 +25,19 @@ const Student = () => {
             {/* Main-div */}
             <div className='w-full overflow-hidden bg-yellow '>
                 {/* Profile-div */}
-                <div className='py-8 bg-red-300 w-full border-b  flex flex-col justify-center px-16 gap-3 mt-5'>
-                    <h1 className='text-3xl font-semibold'>Hi, {d.firstname} ! 🤚</h1>
-                    <h3 className='text-xl'><Link className='text-blue-500'>Complete your profile </Link> to start applying for internships and jobs</h3>
+                <div className='py-8 w-full border-b  flex flex-col justify-center px-16 gap-3 mt-5'>
+                    <h1 className='text-center text-3xl font-semibold'>Hi, {d.firstname} ! 🤚</h1>
+                    <h3 className='text-center text-xl'>Let's help you land your dream career</h3>
                 </div>
 
                 {/* Deshbord-div */}
-                <div className='w-full bg-gray-300 flex items-center '>
-                    <div className='h-[140vh] w-[30%] bg-red-200'>
-
-                    </div>
-                    <div className='w-[70%] overflow-hidden  px-2'>
+                <div className='w-full  flex items-center '>
+                    
+                    <div className='w-full overflow-hidden  px-2'>
                         {/* HomePage-div */}
 
                         {/* scroll */}
-                        <div id='job' className='h-60 w-full mt-10  flex items-center gap-12 px-5 whitespace-nowrap overflow-y-hidden overflow-x-scroll snap-mandatory '>
+                        <div id='job' className='h-96 w-full mt-10  flex items-center gap-12 px-5 whitespace-nowrap overflow-y-hidden overflow-x-scroll snap-mandatory '>
 
                             <div className='h-5/6 w-4/12 shrink-0 rounded-3xl bg-[url(https://internshala.com/static/images/pgc_course_specific_banners/pgc_homepage_banner_new.png)] bg-cover bg-no-repeat'></div>
 
@@ -85,7 +83,7 @@ const Student = () => {
 
                 {/* Footer-div */}
 
-                <div className='h-[95vh] w-full flex items-center'>
+                <div className=' w-full flex items-center'>
                     <Footer />
                 </div>
             </div>
