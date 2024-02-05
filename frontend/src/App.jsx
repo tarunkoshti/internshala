@@ -9,7 +9,8 @@ import Employee from './pages/Employee'
 import Forget from './components/Forget'
 import Forgetlink from './components/forgetlink'
 import Employesignup from './pages/Employesignup'
-
+import Internship from './components/Internship'
+import Job from './components/Job'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Link to="/student">current user</Link>
       </div> */}
       <Nav />
+      
 
       <Routes>
         <Route path='/' element={<Homepage />} />
@@ -33,7 +35,8 @@ const App = () => {
         <Route path='/employee/dashboard' element={<Employee />} />
         <Route path='/forget' element={<Forget/>} />
         <Route path='/forget-link' element={<Forgetlink/>} />
-       
+        <Route path='/employe/dashboard/internship/:id' element={<Internship/>}/>
+        <Route path='/employe/dashboard/job/:id' element={<Job/>}/>
 
       </Routes>
     </>
