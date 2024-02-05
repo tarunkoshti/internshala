@@ -50,7 +50,7 @@ router.get("/internship/read/all", readallinternship)
 
 
 //POST /internship/read/:id
-router.post("/internship/read/:id", isAuthenticated, readsingleinternship)
+router.get("/internship/read/:id", isAuthenticated, readsingleinternship)
 
 
 // ---- JOBS -----

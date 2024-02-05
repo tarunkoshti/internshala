@@ -6,9 +6,10 @@ import { CiCalendar } from "react-icons/ci";
 import { IoChevronForward } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 
-const Internshiocard = () => {
-
+const Internshiocard = ({ id }) => {
+  console.log(id)
   const [internship, setInternship] = useState([])
+  // const [id, setId] = useState("")
 
   const fetchData = async () => {
     const response = await axios.get("/api/employe/internship/read/all")
@@ -23,10 +24,10 @@ const Internshiocard = () => {
 
   return (
     <div id='scroll' className='h-3/5 w-full  flex items-center gap-10 whitespace-nowrap overflow-y-hidden overflow-x-scroll snap-mandatory mx-5'>
-
+      {/* to="/student/signin" */}
       {
         internship.map((data, index) => (
-          <Link to="/student/signin">
+          <Link to={id ? `/student/dashboard/internship/${data._id}` : `/student/signin`} >
             <div key={index} className=' w-60 bg-white shrink-0 rounded-lg'>
               <div className=' w-full py-5 border-b-2 px-4'>
                 <div className='font-semibold'>{data.profile}</div>
