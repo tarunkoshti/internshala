@@ -8,12 +8,14 @@ const Homepage = () => {
   return (
     <>
       {/* Main div */}
-      <div className=' w-full overflow-hidden'>
-
+      <div className='w-full overflow-hidden'>
+        {/* Homepage-div */}
+          <div>
         {/* Heading div */}
         <div className='text-5xl text-center '>
           <h3 className='font-bold py-10'>Make your dream career a reality</h3>
           <h4 className='text-3xl font-semibold pb-5'>Trending on Internshala 🔥</h4>
+       
         </div>
         {/* ScrollBar-div */}
         <div id='job' className='h-96 w-full mt-12 flex items-center gap-12 px-5 whitespace-nowrap overflow-y-hidden overflow-x-scroll snap-mandatory '>
@@ -131,7 +133,7 @@ const Homepage = () => {
           <Footer />
         </div>
 
-
+        </div>
 
       </div>
     </>
