@@ -6,12 +6,12 @@ import { CiSearch } from "react-icons/ci";
 
 const Nav = ({ view }) => {
   return (
-    <div className='border-b-2 border-zinc-300'>
+    <div className='w-full border-b-2 border-zinc-300'>
       <nav className='flex w-[80%]  m-auto justify-between items-center '>
 
         <NavLink to="/" className='h-20'><img className='h-[100%] bg-[url(/logo.png)] ' src="/logo.png" alt="" /></NavLink>
 
-        <div className='flex gap-10' id="navleft">
+        <div className='hidden lg:flex gap-10' id="navleft">
           <NavLink >Internships</NavLink>
           <NavLink>Jobs</NavLink>
           <NavLink>Courses</NavLink>
@@ -19,7 +19,7 @@ const Nav = ({ view }) => {
 
 
         {/* nav right part */}
-        <div className='flex gap-6' id="navright">
+        <div className='hidden md:flex gap-6' id="navright">
           <div className='flex items-center gap-3'>
             <CiSearch size='20' />
             <NavLink >Search</NavLink>

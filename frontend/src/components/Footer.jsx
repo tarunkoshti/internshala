@@ -7,9 +7,9 @@ import { FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className='h-[95vh] w-full bg-zinc-800 text-white'>
-      <div className='h-[60vh] w-full flex items-center justify-evenly border-b '>
-        <div className='h-[55vh] w-64  flex flex-col items-start justify-center  px-5'>
+    <div className=' w-full bg-zinc-800 text-white'>
+      <div className='py-5 w-full lg:flex items-start  border-b '>
+        <div className='hidden  w-64  lg:flex flex-col items-start justify-center  px-5'>
             <h6 className='text-base font-semibold'>Internships by places</h6>
             <br />
             <h6 className='text-base'>Internship in India</h6>
@@ -23,7 +23,7 @@ const Footer = () => {
             <h6 className='text-base'>Virtual internship</h6>
             <h6 className='text-base'>View all internships</h6>
         </div>
-        <div className='h-[55vh] w-64  flex flex-col items-start justify-center  px-5'>
+        <div className='hidden  w-64  lg:flex flex-col items-start justify-center  px-5'>
             <h6 className='text-base font-semibold'>Internship by Stream</h6>
             <br />
             <h6 className='text-base'>Computer Science Internship</h6>
@@ -37,7 +37,7 @@ const Footer = () => {
             <h6 className='text-base'>Campus Ambassador Program</h6>
             <h6 className='text-base'>View all internships</h6>
         </div>
-        <div className='h-[55vh] w-64  flex flex-col items-start justify-center  px-5'>
+        <div className='hidden  w-64  lg:flex flex-col items-start justify-center  px-5'>
             <h6 className='text-base font-semibold'>Jobs by Places</h6>
             <br />
             <h6 className='text-base'>Jobs in Delhi</h6>
@@ -51,7 +51,7 @@ const Footer = () => {
             <h6 className='text-base'>Jobs in Lucknow</h6>
             <h6 className='text-base'>View all jobs</h6>
         </div>
-        <div className='h-[55vh] w-64  flex flex-col items-start justify-center  px-5'>
+        <div className='hidden  w-64  lg:flex flex-col items-start justify-center  px-5'>
             <h6 className='text-base font-semibold'>Jobs by Stream</h6>
             <br />
             <h6 className='text-base'>Marketing jobs</h6>
@@ -65,7 +65,7 @@ const Footer = () => {
             <h6 className='text-base'>Data Science jobs</h6>
             <h6 className='text-base'>View all jobs</h6>
         </div>
-        <div className='h-[55vh] w-80  flex flex-col items-start justify-center  px-5 leading-6'>
+        <div className=' w-80  flex flex-col items-start justify-center  px-5 leading-6'>
         <h6 className='text-base font-semibold'>Placement Guarantee Courses ! OFFER</h6>
             <br />
             <h6 className='text-sm'>Full Stack Development course with placement</h6>
@@ -80,30 +80,34 @@ const Footer = () => {
             <h6 className='text-base font-semibold'>Certification Courses</h6>
         </div>
       </div>
-      <div className='h-[40vh] w-full  flex flex-col justify-center'>
-        <div className='h-[23vh] w-full  flex items-center justify-evenly'>
-            <div className='h-[20vh] w-64  flex flex-col justify-start p-5 leading-7'>
+      <div className='py-5 px-4 w-full  flex flex-col gap-5'>
+        <div className=' w-full  md:flex '>
+            <div className='w-full gap-10  lg:flex  '>
+            <div className=' flex flex-col  leading-7'>
                 <h1>About us</h1>
                 <h1>We're hiring</h1>
                 <h1>Hire interns for your company</h1>
             </div>
-            <div className='h-[20vh] w-48  flex flex-col justify-start p-5 leading-7'>
+            <div className='flex flex-col  leading-7'>
                 <h1>Team Diary</h1>
                 <h1>Blog</h1>
                 <h1>Our Services</h1>
             </div>
-            <div className='h-[20vh] w-48  flex flex-col justify-start p-5 leading-7'>
+            </div>
+            <div className='w-full gap-10 lg:flex  '>
+            <div className='  flex flex-col  leading-7'>
                 <h1>Terms & Conditions</h1>
                 <h1>Privacy</h1>
                 <h1>Contact us</h1>
             </div>
-            <div className='h-[20vh] w-56  flex flex-col justify-start p-5 leading-7'>
+            <div className='  flex flex-col  leading-7'>
                 <h1>Sitemap</h1>
                 <h1>College TPO registration</h1>
                 <h1>List of Companies</h1>
             </div>
+            </div>
         </div>
-        <div className='h-[13vh] w-full  flex items-center justify-start px-32 gap-5'>
+        <div className='py-3 w-full  flex items-center justify-start gap-5'>
             <button className='px-10 py-2 border-2 text-white flex items-center gap-2'><span><FaGooglePlay /></span>Get Android App</button>
             <FaInstagram size="28" color='white' />
             <FaTwitter size="28" color='white'/>

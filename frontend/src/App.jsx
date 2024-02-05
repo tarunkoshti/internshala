@@ -9,8 +9,12 @@ import Employee from './pages/Employee'
 import Forget from './components/Forget'
 import Forgetlink from './components/forgetlink'
 import Employesignup from './pages/Employesignup'
+
 import Internship from './components/Internship'
 import Job from './components/Job'
+
+import SingleInternship from './components/SingleInternship'
+
 
 const App = () => {
   return (
@@ -37,11 +41,14 @@ const App = () => {
         <Route path='/forget-link' element={<Forgetlink/>} />
         <Route path='/employe/dashboard/internship/:id' element={<Internship/>}/>
         <Route path='/employe/dashboard/job/:id' element={<Job/>}/>
+        <Route path='/student/dashboard/internship/:id' element={<SingleInternship />} />
+
+
 
       </Routes>
     </>
   )
-  
+
 }
 
 export default App
