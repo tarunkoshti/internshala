@@ -25,7 +25,7 @@ router.post("/send-mail", employesendmail)
 // // /forget-link/659ecf41d48275518f826873
 
 //GET /forget-link/:employeid
-router.get("/forget-link/:id", employeforgetlink)
+router.post("/forget-link/:id", employeforgetlink)
 
 //POST /reset-password/:employeid
 router.post("/reset-password/:id", isAuthenticated, employeresetpassword)
