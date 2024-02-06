@@ -59,7 +59,7 @@ router.get("/internship/read/:id", isAuthenticated, readsingleinternship)
 router.post("/job/create", isAuthenticated, createjob)
 
 //POST /job/read/
-router.post("/job/read/", isAuthenticated, readjob)
+router.get("/job/read/", isAuthenticated, readjob)
 
 //POST /job/read/all
 router.get("/job/read/all", readalljob)
