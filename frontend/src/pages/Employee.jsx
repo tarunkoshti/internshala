@@ -4,7 +4,9 @@ import axios from 'axios'
 import { Link } from 'react-router-dom'
 import { IoChevronForward, IoLocationOutline } from 'react-icons/io5'
 import { LiaMoneyBillSolid } from 'react-icons/lia'
-import { CiCalendar } from 'react-icons/ci'
+import { CiCalendar } from 'react-icons/ci';
+import EmployeNav from '../components/EmployeNav'
+
 const Employee = () => {
   const [internship, setInternship] = useState([])
   const [job, setJob] = useState([])
@@ -30,6 +32,7 @@ const Employee = () => {
   }, [])
   return (
     <div className='bg-zinc-100'>
+      <EmployeNav/>
     {/* Heading-Internship-card */}
     <div className='py-10 w-full mt-5 text-center'>
       <h3 className='text-3xl font-semibold'>Latest internships on Internshala</h3>

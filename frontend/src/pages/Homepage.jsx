@@ -3,10 +3,11 @@ import React from 'react'
 import Internshiocard from '../components/Internshiocard'
 import Jobcard from '../components/Jobcard'
 import Footer from '../components/Footer'
+import Nav from '../components/Nav'
 
 const Homepage = () => {
   return (
-    <>
+    <><Nav />
       {/* Main div */}
       <div className='w-full overflow-hidden'>
         {/* Homepage-div */}
