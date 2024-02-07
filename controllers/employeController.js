@@ -54,8 +54,10 @@ exports.employesendmail = catchAsyncErrors(async function (req, res, next) {
 
     if (!employe) return next(new ErrorHandler("User not found with this email address", 404));
 
-    const url = `${req.protocol}://${req.get("host")}/employe/forget-link/${employe._id}`
+    // const url = `${req.protocol}://${req.get("host")}/employe/forget-link/${employe._id}`
+    const url = `${req.protocol}://${req.body.currentHost}/employe/forget-link/${employe._id}`
 
+    // const backendhost = req.get("host")
     sendmail(req, res, next, url);
     employe.resetPasswordToken = "1";
     await employe.save();
@@ -138,7 +140,7 @@ exports.createinternship = catchAsyncErrors(async function (req, res, next) {
 });
 
 exports.readinternship = catchAsyncErrors(async function (req, res, next) {
-    const {internships} = await Employe.findById(req.id).populate("internships").exec();
+    const { internships } = await Employe.findById(req.id).populate("internships").exec();
     res.status(200).json({
         success: true,
         internships
@@ -146,7 +148,7 @@ exports.readinternship = catchAsyncErrors(async function (req, res, next) {
 });
 
 exports.readallinternship = catchAsyncErrors(async function (req, res, next) {
-    const  internships  = await Internship.find().exec();
+    const internships = await Internship.find().exec();
     res.status(200).json({
         success: true,
         internships

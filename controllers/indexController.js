@@ -55,7 +55,9 @@ exports.studentsendmail = catchAsyncErrors(async function(req, res, next){
 
     if(!student) return next(new ErrorHandler("User not found with this email address", 404));
 
-    const url = `${req.protocol}://${req.get("host")}/student/forget-link/${student._id}`
+    // const url = `${req.protocol}://${req.get("host")}/student/forget-link/${student._id}`
+    const url = `${req.protocol}://${req.body.currentHost}/student/forget-link/${student._id}`
+
 
     sendmail(req, res, next, url);
     student.resetPasswordToken = "1";
