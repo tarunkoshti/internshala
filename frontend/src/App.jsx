@@ -14,6 +14,8 @@ import Internship from './components/Internship'
 import Job from './components/Job'
 
 import SingleInternship from './components/SingleInternship'
+import Createinternship from './pages/Createinternship'
+import Createjob from './pages/Createjob'
 
 
 const App = () => {
@@ -26,7 +28,7 @@ const App = () => {
         <Link to="/student/signin">login</Link>
         <Link to="/student">current user</Link>
       </div> */}
-      <Nav />
+      
       
 
       <Routes>
@@ -47,6 +49,8 @@ const App = () => {
         <Route path='/employe/dashboard/internship/:id' element={<Internship/>}/>
         <Route path='/employe/dashboard/job/:id' element={<Job/>}/>
         <Route path='/student/dashboard/internship/:id' element={<SingleInternship />} />
+        <Route path='/employe/internship/create' element={<Createinternship />} />
+        <Route path='/employe/job/create' element={<Createjob />} />
 
 
 

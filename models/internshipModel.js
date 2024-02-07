@@ -14,13 +14,18 @@ const internshipModel = new mongoose.Schema({
     skills: String,
     internshiptype: {
         type: String,
-        enum: ["In office", "Remote"]
+        enum: ["In office", "Remote","Hybrid"]
+    },
+    workingtype: {
+        type: String,
+        enum: ["Full-time", "Part-time"]
     },
     openings: Number,
     from: String,
     to: String,
     duration: String,
     responsibility: String,
+    preferences:String,
     stipend:{
        status:{
             type: String,
@@ -31,7 +36,13 @@ const internshipModel = new mongoose.Schema({
     perks: String,
     assements: String,
     company: String,
-    location: String
+    location: String,
+    contact: {
+        type: String,
+        // required: [true, "Contact is required"],
+        maxLength: [10, "Contact must not exceed 10 character"],
+        minLength: [10, "Contact should be atleast 4 character long"],
+    },
 
 },
     { timestamps: true }
