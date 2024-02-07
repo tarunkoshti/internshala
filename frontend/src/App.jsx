@@ -16,6 +16,10 @@ import Job from './components/Job'
 import SingleInternship from './components/SingleInternship'
 import Createinternship from './pages/Createinternship'
 import Createjob from './pages/Createjob'
+import Preferences from './pages/StudentProfile/Preferences'
+import Resume from './pages/StudentProfile/Resume'
+import Applications from './pages/StudentProfile/Applications'
+import Safety from './pages/StudentProfile/Safety'
 
 
 const App = () => {
@@ -47,6 +51,12 @@ const App = () => {
         <Route path='/employe/internship/create' element={<Createinternship />} />
         <Route path='/employe/job/create' element={<Createjob />} />
 
+        {/* Student profile routes */}
+        <Route path='/student/applications' element={<Applications />} />
+        <Route path='/student/resume' element={<Resume />} />
+        <Route path='/student/preferences' element={<Preferences />} />
+        <Route path='/student/safety' element={<Safety />} />
+        
 
 
       </Routes>

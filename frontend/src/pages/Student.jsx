@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import Internshiocard from '../components/Internshiocard'
 import Jobcard from '../components/Jobcard'
 import Footer from '../components/Footer'
+import StudentNav from '../components/Studentnav'
 
 const Student = () => {
     const [d, setD] = useState({})
@@ -22,6 +23,9 @@ const Student = () => {
     // console.log(data)
     return (
         <>
+           {/* Nav */}
+
+           <StudentNav name={d.firstname} email={d.email}/>
             {/* Main-div */}
             <div className='w-full overflow-hidden bg-yellow '>
                 {/* Profile-div */}
