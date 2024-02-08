@@ -22,6 +22,7 @@ const Student = () => {
     // console.log(data)
     return (
         <>
+        
             {/* Main-div */}
             <div className='w-full overflow-hidden bg-yellow '>
                 {/* Profile-div */}

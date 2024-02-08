@@ -7,7 +7,8 @@ import Nav from '../components/Nav'
 
 const Homepage = () => {
   return (
-    <><Nav />
+    <>
+    <Nav />
       {/* Main div */}
       <div className='w-full overflow-hidden'>
         {/* Homepage-div */}
