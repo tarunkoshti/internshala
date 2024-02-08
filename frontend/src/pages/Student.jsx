@@ -23,6 +23,8 @@ const Student = () => {
     // console.log(data)
     return (
         <>
+        {/* Nav */}
+        <StudentNav name={d.firstname} email={d.email}/>
             {/* Main-div */}
             <div className='w-full overflow-hidden bg-yellow '>
                 {/* Profile-div */}
