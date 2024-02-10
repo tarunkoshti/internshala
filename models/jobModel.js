@@ -24,7 +24,10 @@ const jobModel = new mongoose.Schema({
     responsbility: String,
     preferences: String,
     salary: Number,
-    perks: String,
+    perks:{
+        type: [String],
+        enum: ["5 days a week", "Health Insurance", "Life Insurance", "Free snacks & beverages"]
+    },
     assements: String,
     company: String,
     location: String,

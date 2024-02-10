@@ -32,7 +32,7 @@ const Jobcard = () => {
                 <div className='font-semibold'>{data.title}</div>
                 <div className='text-zinc-500 font-semibold text-sm'>{data.company}</div>
               </div>
-              <div className=' w-full py-5 px-4'>
+              <div className=' w-full py-5 px-4 '>
                 <span className='flex text-md items-center gap-2'>
                   <IoLocationOutline size="20" /> {data.location}
                 </span>
